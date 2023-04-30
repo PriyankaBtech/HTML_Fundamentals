@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+<body>
+    <!-- Image through Browser -->
+    <img src="https://cdn.pixabay.com/photo/2022/06/24/17/35/relaxation-7282116_1280.jpg" width="500px" alt="No Image">
+
+    <!-- Image through local -->
+    <img src="./my_img.png" width="500px" alt="No Image">
+
+    <!-- Use picture tag for good SEO -->
+    <picture>
+    <source media="(min-width 650px)" srcset="./my_img.png">
+    <img src="./my_img.png" width="500px" alt="No Image">
+    </picture>
+    
+</body>
+</html>
